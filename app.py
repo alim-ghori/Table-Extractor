@@ -9,14 +9,14 @@ import base64
 #  Enable at the time of Hosting in any Linux based server
 
 
-# @st.cache
-# def gh():
-#     proc = subprocess.Popen('apt-get install -y ghostscript', shell=True, stdin=None,
-#                             stdout=open(os.devnull, "wb"), stderr=STDOUT, executable="/bin/bash")
-#     proc.wait()
+@st.cache
+def gh():
+    proc = subprocess.Popen('apt-get install -y ghostscript', shell=True, stdin=None,
+                            stdout=open(os.devnull, "wb"), stderr=STDOUT, executable="/bin/bash")
+    proc.wait()
 
 
-# gh()
+gh()
 
 
 st.title("Table Extractor form PDF")
