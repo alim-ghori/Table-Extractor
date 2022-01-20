@@ -1,9 +1,9 @@
 import streamlit as st
-import camelot as cam
 import subprocess
-from subprocess import STDOUT, check_call
+from subprocess import STDOUT, check_call  # os process manipulation
 import os
 import base64
+import camelot as cam
 
 
 #  Enable at the time of Hosting in any Linux based server
